@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Fight Kawaii</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>✦ Mini Fight ✦</h1>
+
+    <!-- Menu : noms, look des personnages, mode de jeu -->
+    <section id="menu" class="card">
+      <div class="modes" role="group" aria-label="Mode de jeu">
+        <button type="button" class="chip active" data-mode="2p">2 joueuses</button>
+        <button type="button" class="chip" data-mode="cpu">Contre l'ordi</button>
+      </div>
+
+      <div id="panels" class="panels"></div>
+
+      <p id="menuError" class="error-msg" role="alert"></p>
+      <button id="playBtn" type="button" class="btn big">▶ Jouer</button>
+    </section>
+
+    <!-- Jeu -->
+    <section id="gameWrap" class="game-wrap" hidden>
+      <div class="stage">
+        <canvas id="game" width="960" height="540"></canvas>
+
+        <div id="pauseOverlay" class="overlay" hidden>
+          <h2>Pause</h2>
+          <div class="row">
+            <button id="resumeBtn" type="button" class="btn">▶ Reprendre</button>
+            <button id="restartBtn" type="button" class="btn ghost">↻ Recommencer</button>
+            <button id="pauseMenuBtn" type="button" class="btn ghost">⌂ Menu</button>
+          </div>
+        </div>
+
+        <div id="overOverlay" class="overlay" hidden>
+          <h2 id="overTitle"></h2>
+          <p id="overScore" class="score"></p>
+          <div class="row">
+            <button id="rematchBtn" type="button" class="btn">↻ Revanche</button>
+            <button id="overMenuBtn" type="button" class="btn ghost">⌂ Menu</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button id="pauseBtn" type="button" class="btn small">⏸ Pause</button>
+        <button id="quitBtn" type="button" class="btn small ghost">⌂ Menu</button>
+      </div>
+    </section>
+
+    <p id="help" class="help"></p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
