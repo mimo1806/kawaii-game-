@@ -34,22 +34,5 @@ Ouvre simplement `index.html` dans ton navigateur (double-clic).
 - Le round dure 60 secondes. Si le temps est écoulé, celle qui a le plus de vie gagne.
 - Les victoires sont comptées tant que tu enchaînes les revanches.
 
-## Mettre en ligne avec GitHub Pages
-
-1. Crée un dépôt sur GitHub et pousse les fichiers :
-   ```bash
-   git init
-   git add .
-   git commit -m "Premier commit"
-   git branch -M main
-   git remote add origin https://github.com/TON-PSEUDO/mini-fight.git
-   git push -u origin main
-   ```
-2. Dans le dépôt : **Settings → Pages → Branch: `main` / root → Save**.
-3. Le jeu sera jouable sur `https://TON-PSEUDO.github.io/mini-fight/`.
-
-## Idées pour la suite
-
-- Ajouter des sons et de la musique
-- Plusieurs rounds (premier à 2 victoires)
-- Attaques spéciales
+## Développer par :
+Haddadj Manel
