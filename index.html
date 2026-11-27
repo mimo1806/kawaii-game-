@@ -10,7 +10,7 @@
   <main>
     <h1>✦ Mini Fight ✦</h1>
 
-    <!-- Menu : noms, look des personnages, mode de jeu -->
+    <!-- Menu : personnage, nom, couleur, mode de jeu -->
     <section id="menu" class="card">
       <div class="modes" role="group" aria-label="Mode de jeu">
         <button type="button" class="chip active" data-mode="2p">2 joueuses</button>
@@ -21,6 +21,7 @@
 
       <p id="menuError" class="error-msg" role="alert"></p>
       <button id="playBtn" type="button" class="btn big">▶ Jouer</button>
+      <p class="tip">Astuce : clique sur un personnage pour voir ses attaques ✿</p>
     </section>
 
     <!-- Jeu -->
@@ -49,6 +50,7 @@
 
       <div class="toolbar">
         <button id="pauseBtn" type="button" class="btn small">⏸ Pause</button>
+        <button id="soundBtn" type="button" class="btn small ghost">🔊 Son</button>
         <button id="quitBtn" type="button" class="btn small ghost">⌂ Menu</button>
       </div>
     </section>
@@ -58,3 +60,4 @@
   <script src="game.js"></script>
 </body>
 </html>
+
